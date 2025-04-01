@@ -1,0 +1,11 @@
+stages:
+    prepare:
+        cmd: python labs/src/create_features.py
+        deps:
+            - labs/data/adult.data
+            - labs/data/adult.test
+            - labs/src/create_features.py
+        outs:
+            - labs/data/pipeline.pkl
+            - labs/data/processed_train_data.csv
+            - labs/data/processed_test_data.csv
