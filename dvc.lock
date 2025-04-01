@@ -1,30 +1,26 @@
 schema: '2.0'
 stages:
   prepare:
-    cmd: python labs/src/create_features_w_params.py
+    cmd: python labs/src/preprocessing.py
     deps:
-    - path: labs/data/adult.data
+    - path: labs/data/mobile_price/test.csv
       hash: md5
-      md5: 5d7c39d7b8804f071cdd1f2a7c460872
-      size: 3974305
-    - path: labs/data/adult.test
+      md5: 384ff19e433fbc285372ebfb43447d1c
+      size: 63850
+    - path: labs/data/mobile_price/train.csv
       hash: md5
-      md5: 366c746021dc50ad9d933d2817612fc9
-      size: 2003132
-    - path: labs/src/create_features.py
+      md5: e8c4560161dc3c8571b5b2db25be3294
+      size: 122403
+    - path: labs/src/preprocessing.py
       hash: md5
-      md5: 602671e1fa9579077f8342d4794bec89
-      size: 2738
+      md5: 3fdb03bc9928c9fdd966d3ccc7588384
+      size: 598
     outs:
-    - path: labs/data/pipeline.pkl
-      hash: md5
-      md5: 0ccf6f7c024f21a5d727f2e45bd61728
-      size: 6104
     - path: labs/data/processed_test_data.csv
       hash: md5
-      md5: a59c8daac38fe1ca84dda2b458ee762a
-      size: 5409602
+      md5: b56c0cc79fa3744e78032dc4b49c93fe
+      size: 18253
     - path: labs/data/processed_train_data.csv
       hash: md5
-      md5: adf63b6ce20f7ee74f63d5dabb325226
-      size: 10829967
+      md5: dee176dce3141896ad16c6d8e72cb318
+      size: 40576

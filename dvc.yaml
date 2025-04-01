@@ -1,15 +1,10 @@
-params:
-    - features.chi2percentile
-    - features.train_path
-    - features.test_path
 stages:
     prepare:
-        cmd: python labs/src/create_features_w_params.py
+        cmd: python labs/src/preprocessing.py
         deps:
-            - labs/data/adult.data
-            - labs/data/adult.test
-            - labs/src/create_features.py
+            - labs/data/mobile_price/train.csv
+            - labs/data/mobile_price/test.csv
+            - labs/src/preprocessing.py
         outs:
-            - labs/data/pipeline.pkl
             - labs/data/processed_train_data.csv
             - labs/data/processed_test_data.csv
