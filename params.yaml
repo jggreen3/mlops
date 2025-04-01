@@ -1,0 +1,4 @@
+features:
+    chi2percentile: 50
+    train_path: labs/data/adult.data
+    test_path: labs/data/adult.test

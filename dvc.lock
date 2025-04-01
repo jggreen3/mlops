@@ -1,7 +1,7 @@
 schema: '2.0'
 stages:
   prepare:
-    cmd: python labs/src/create_features.py
+    cmd: python labs/src/create_features_w_params.py
     deps:
     - path: labs/data/adult.data
       hash: md5
